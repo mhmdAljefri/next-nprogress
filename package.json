@@ -1,0 +1,66 @@
+{
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "keywords": ["nprogress", "nextjs"],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why"
+  },
+  "peerDependencies": {
+    "next": "^12.2.0",
+    "nprogress": "^0.2.0",
+    "react": "^18.2.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "@mhmdaljefri/next-nprogress",
+  "author": "@mhmdaljefri",
+  "module": "dist/next-nprogress.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/next-nprogress.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/next-nprogress.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^8.0.1",
+    "@types/nprogress": "^0.2.0",
+    "@types/react": "^18.0.17",
+    "@types/styled-jsx": "^3.4.4",
+    "husky": "^8.0.1",
+    "next": "^12.2.5",
+    "progress": "^2.0.3",
+    "react": "^18.2.0",
+    "size-limit": "^8.0.1",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.8.2"
+  }
+}
