@@ -4,7 +4,7 @@ An unofficial nextjs wrapper of nprogress package.
 
 ## Installing
 ```sh
-npm i @mhmdaljefri/next-nprogress # yarn add @mhmdaljefri/next-nprogress
+npm i @mhmdaljefri/next-nprogress nprogress # yarn add @mhmdaljefri/next-nprogress nprogress
 ```
 
 ## Example
