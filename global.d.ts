@@ -1,0 +1,1 @@
+declare "@mhmdlajefri/next-nprogress"
